@@ -1,17 +1,21 @@
-# Dicoding Collection Dashboard ✨
+# Dicoding Bike Sharing Dataset Dashboard ✨
 
-## Setup environment
+## Setup environment - Anaconda
 ```
-pip install numpy 
-pip install pandas 
-pip install scipy 
-pip install matplotlib 
-pip install seaborn 
-pip install jupyter 
-pip install streamlit 
+conda create --name main-ds python=3.12.6
+conda activate main-ds
+pip install -r requirements.txt
 ```
 
+## Setup environment -Terminal
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
 ## Run steamlit app
 ```
-streamlit run dashboard/dashboard.py
+streamlit run dashboard.py
 ```
