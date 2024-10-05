@@ -71,7 +71,7 @@ with tab3:
     ax.plot(monthly_usage.index, monthly_usage.values, marker='o', linestyle='-')
 
     # Set title, labels, and formatting for the plot
-    ax.set_title('Seasonal patterns of bicycle use')
+    ax.set_title('Monthly patterns of bicycle use')
     ax.set_xlabel('Date')
     ax.set_ylabel('Number of Bikes shared')
     ax.tick_params(axis='x', rotation=45)
@@ -82,7 +82,7 @@ with tab3:
     ax.set_xticklabels(monthly_usage.index[::30], rotation=45)
 
     # Set the title for the plot in Streamlit
-    st.title('Seasonal patterns of bicycle use')
+    st.title('Monthly patterns of bicycle use')
 
     # Display the Matplotlib plot in Streamlit
     st.pyplot(fig)
